@@ -39,7 +39,7 @@ Efficient-TT-STGCN-for-Sign-Language-Recognition/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/<your-username>/Efficient-TT-STGCN-for-Sign-Language-Recognition.git
+git clone https://github.com/Muhammad-Huzifa/Efficient-TT-STGCN-for-Sign-Language-Recognition.git
 cd Efficient-TT-STGCN-for-Sign-Language-Recognition
 pip install -r requirements.txt
 ```
@@ -59,25 +59,12 @@ pip install -r requirements.txt
 
 ---
 
-## 🤝 Citation
 
-If you use this work, please cite:
-
-```
-@misc{TT-STGCN2025,
-  author = {Huzaifa, Muhammad},
-  title = {Efficient TT-STGCN for Sign Language Recognition},
-  year = {2025},
-  howpublished = {\url{https://github.com/<your-username>/Efficient-TT-STGCN-for-Sign-Language-Recognition}}
-}
-```
-
----
 
 ## 👨‍🔬 Author
 
 **Muhammad Huzaifa**
 Sign Language Recognition Researcher | Deep Learning Engineer
-📬 Contact: [[your-email@example.com](mailto:your-email@example.com)]
+📬 Contact: mhuzaifa3202@gmail.com
 
 ---
