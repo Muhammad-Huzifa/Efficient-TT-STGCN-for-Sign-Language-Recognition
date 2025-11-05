@@ -53,6 +53,17 @@ Efficient-TT-STGCN-for-Sign-Language-Recognition/
 ├── requirements.txt
 └── README.md
 ```
+## 📦 Dataset
+
+This implementation uses the **WLASL2000** dataset (resized version):
+🔗 **[Kaggle – WLASL2000 Resized Dataset](https://www.kaggle.com/datasets/sttaseen/wlasl2000-resized)**
+
+Each video contains sign language gestures annotated with gloss labels.
+The dataset supports **300+ isolated sign classes**, ideal for benchmark evaluation of lightweight SLR models.
+
+
+
+
 
 ---
 
