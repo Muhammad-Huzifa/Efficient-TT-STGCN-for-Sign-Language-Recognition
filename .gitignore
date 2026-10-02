@@ -1,45 +1,14 @@
-# Python
+.venv/
+.venv-*/
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.pkl
+.ipynb_checkpoints/
+data/*
+!data/README.md
+outputs/*
+!outputs/README.md
+*.npz
+*.npy
 *.pt
 *.pth
-*.h5
-*.npz
-
-# Jupyter Notebooks
-.ipynb_checkpoints/
-*.nbconvert.ipynb
-
-# Datasets and Outputs
-data/
-datasets/
-outputs/
-results/
-checkpoints/
-logs/
-wandb/
-runs/
-
-# Environment
 .env
-.venv/
-env/
-venv/
-*.egg-info/
-pip-wheel-metadata/
-
-# System Files
-.DS_Store
-Thumbs.db
-
-# VSCode / PyCharm
-.vscode/
-.idea/
-
-# Temporary Files
-*.tmp
-*.log
-*.bak
