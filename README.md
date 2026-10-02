@@ -16,8 +16,8 @@ Each experiment includes its own extraction/training notebooks, dependencies, so
 ## Get started
 
 ```bash
-git clone https://github.com/Muhammad-Huzifa/Efficient-TT-STGCN-for-Sign-Language-Recognition.git
-cd Efficient-TT-STGCN-for-Sign-Language-Recognition
+git clone https://github.com/Muhammad-Huzifa/sign-language-recognition.git
+cd sign-language-recognition
 ```
 
 Start with [BiLSTM](experiments/01_bilstm_attention/README.md), or select the experiment you want to reproduce. Use Python 3.11 and its environment commands. Read [the dataset guide](docs/DATASETS.md) before installing or running extraction.
@@ -42,6 +42,6 @@ python scripts/check_notebooks.py --root experiments
 
 All source model/training cells are preserved and their hashes recorded in [the source map](docs/SOURCE_MAP.md). JSON and Python syntax were checked. Full dependency installation, video extraction, GPU training, and real checkpoint inference were not run. Historical accuracy values are labeled explicitly in [results notes](docs/RESULTS.md).
 
-General neural-network and detection lessons belong in the [Deep Learning collection](https://github.com/Muhammad-Huzifa/Neural-Networks-and-Deep-Learning-Using-Pytorch-and-Tensor-Flow); classical ML belongs in [Machine Learning](https://github.com/Muhammad-Huzifa/Machine_Learning).
+General neural-network and detection lessons belong in the [Deep Learning collection](https://github.com/Muhammad-Huzifa/deep-learning); classical ML belongs in [Machine Learning](https://github.com/Muhammad-Huzifa/machine-learning).
 
 Muhammad Huzifa — [GitHub](https://github.com/Muhammad-Huzifa)
