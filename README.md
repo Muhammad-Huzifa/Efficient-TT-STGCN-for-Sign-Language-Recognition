@@ -1,120 +1,54 @@
-# Efficient TT-STGCN for Sign Language Recognition
+# Efficient TT-STGCN
 
-This repository contains an efficient and lightweight **Temporal Transformer Spatio-Temporal Graph Convolutional Network (TT-STGCN)** for **Sign Language Recognition (SLR)** using skeletal landmarks.
-It combines transformer-based temporal modeling with adaptive graph convolution for highly efficient recognition while maintaining strong accuracy.
+A notebook-based isolated sign-language recognition experiment using joint and bone features, adaptive graph layers, and lightweight temporal modeling.
 
----
+## Notebook order
 
-## 🚀 Highlights
+| Order | Notebook |
+| --- | --- |
+| 1 | [01_extract_landmarks.ipynb](notebooks/01_extract_landmarks.ipynb) |
+| 2 | [02_train_lightweight_ttstgcn.ipynb](notebooks/02_train_lightweight_ttstgcn.ipynb) |
 
-* **Dual-Stream Architecture:** Joint and Bone feature streams with late fusion.
-* **Lightweight Design:** Only **~0.25M parameters**, ideal for real-time applications.
-* **High Accuracy:** Achieves **69.8% Top-1 accuracy** on the **NSLT-300** benchmark.
-* **Training Optimizations:**
+## Setup
 
-  * Label Smoothing Cross-Entropy
-  * Mixup Augmentation
-  * Warmup + Cosine Learning Rate Scheduler
-  * Early Stopping & Gradient Clipping
-  * Test-Time Augmentation (TTA)
-* **Dataset Agnostic:** Works with pose-based datasets like **WLASL**, **NSLT**, or custom Mediapipe landmark data.
-
----
-
-## 🧠 Landmark Extraction
-
-The **`extraction_pipeline.ipynb`** (and its underlying script) uses **MediaPipe Holistic** to extract **65 landmarks** per frame as proposed in the **MSE-GCN** methodology:
-
-* **23 Pose landmarks** (face & body)
-* **21 Left-hand landmarks**
-* **21 Right-hand landmarks**
-
-Each frame is processed to produce two complementary data streams:
-
-* **Joint Stream:**
-  Captures 2D coordinates and relative positions of each joint to a central node (mid-shoulder reference).
-* **Bone Stream:**
-  Encodes geometric relations as **bone length** and **bone angle**, providing richer motion dynamics.
-
-> These features are stored as NumPy arrays (`.npz` files) and directly used by the TT-STGCN model for training and evaluation.
-
----
-
-## 📁 Project Structure
-
-```
-Efficient-TT-STGCN-for-Sign-Language-Recognition/
-│
-├── src/
-│   ├── lightweight-ttstgcn-300.ipynb     # Full training pipeline for NSLT-300
-│   ├── landmarks-extraction.ipynb        # Landmark extraction pipeline using MediaPipe
-│
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
-## 📦 Dataset
-
-This implementation uses the **WLASL2000** dataset (resized version):
-🔗 **[Kaggle – WLASL2000 Resized Dataset](https://www.kaggle.com/datasets/sttaseen/wlasl2000-resized)**
-
-Each video contains sign language gestures annotated with gloss labels.
-The dataset supports **300+ isolated sign classes**, ideal for benchmark evaluation of lightweight SLR models.
-
-
-
-
-
----
-
-## ⚙️ Installation
+Use Python 3.11 in a separate environment. Clone and open the project root:
 
 ```bash
 git clone https://github.com/Muhammad-Huzifa/Efficient-TT-STGCN-for-Sign-Language-Recognition.git
 cd Efficient-TT-STGCN-for-Sign-Language-Recognition
-pip install -r requirements.txt
+python -m venv .venv
 ```
 
----
+| Terminal | Activation |
+| --- | --- |
+| Windows Command Prompt | `.venv\Scripts\activate.bat` |
+| Windows PowerShell | `.\.venv\Scripts\Activate.ps1` |
+| Windows Git Bash | `source .venv/Scripts/activate` |
+| Linux/macOS | `source .venv/bin/activate` |
 
-## 🧩 Applications
-
-* Continuous Sign Language Recognition (CSLR)
-* Gesture / Action Recognition
-* Pose-based Human Motion Understanding
-* Low-latency sign interpretation systems
-
----
-
-## 📊 Performance Summary
-
-| Dataset  | # Classes | Parameters | Top-1 Accuracy |
-| -------- | --------- | ---------- | -------------- |
-| NSLT-300 | 300       | ~0.25M     | **69.8%**      |
-
----
-
-## 👨‍🔬 Author
-
-**Muhammad Huzaifa**
-Sign Language Recognition Researcher | Deep Learning Engineer
-📬 **[mhuzaifa3202@gmail.com](mailto:mhuzaifa3202@gmail.com)**
-
----
-
-## 🧾 Citation (if used in research)
-
-If this work helps your research or project, please consider citing:
-
-```
-@misc{huzaifa2025ttstgcn,
-  author = {Muhammad Huzaifa},
-  title = {Efficient TT-STGCN for Sign Language Recognition},
-  year = {2025},
-  url = {https://github.com/Muhammad-Huzifa/Efficient-TT-STGCN-for-Sign-Language-Recognition}
-}
+```bash
+python -m pip install -r requirements.txt
+jupyter lab
 ```
 
----
+## Data and execution
 
-✨ *Designed for efficiency, optimized for Sign Language Recognition.*
+Read [the dataset guide](docs/DATASETS.md) before running extraction or training. Dataset archives and model checkpoints are external resources. Kaggle experiment paths are retained and must match the resources attached to your runtime.
+
+The notebooks target isolated sign classification. Continuous sign-language recognition, production deployment, and measured real-time performance are not established by these files.
+
+## Structure
+
+| Path | Purpose |
+| --- | --- |
+| `notebooks/` | Extraction and training notebooks |
+| `requirements.txt` | Python dependencies |
+| `docs/DATASETS.md` | Data, feature format, and runtime paths |
+| `docs/RESULTS.md` | Reported results and reproduction status |
+| `docs/STRUCTURE.md` | Original-to-current filename mapping |
+
+MediaPipe is kept on its legacy Holistic-compatible 0.10.14 release. NumPy and its OpenCV distribution are aligned with that environment; full dependency installation has not been verified here. The original source does not constitute a locked GPU environment.
+
+This pass checks notebook JSON, links, and source organization. Full extraction, model training, checkpoint inference, and reported benchmark figures have not been reproduced. See [results notes](docs/RESULTS.md).
+
+Muhammad Huzifa — [GitHub](https://github.com/Muhammad-Huzifa)
