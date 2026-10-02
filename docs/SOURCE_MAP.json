@@ -1,0 +1,74 @@
+[
+  {
+    "original_repository": "ISLR-Landmarks-using-BiLSTM-with-Attention-Mechanism",
+    "original_commit": "0adb04466a0969fd3bec32f23fc28427ecfd96bc",
+    "original_path": "src/landmarks_Extraction.ipynb",
+    "original_git_blob_sha": "94722b81137eecc08c220fabfc44bce463c8b3d1",
+    "code_cells_sha256": "53ad62fc7819180725a2e422a0e483d2c80e7eff2f84ae3e24a192ea5d02f692",
+    "destination": "experiments/01_bilstm_attention/notebooks/01_extract_landmarks.ipynb"
+  },
+  {
+    "original_repository": "ISLR-Landmarks-using-BiLSTM-with-Attention-Mechanism",
+    "original_commit": "0adb04466a0969fd3bec32f23fc28427ecfd96bc",
+    "original_path": "src/training_100 Classes.ipynb",
+    "original_git_blob_sha": "65566be2b10ba3a0f95e2dd9f7530591734d85e8",
+    "code_cells_sha256": "4e6ed54b8cb0cbf4e334becac9c768eca70c0e9892cf08d9f9cb2d44a264f9a6",
+    "destination": "experiments/01_bilstm_attention/notebooks/02_train_100_classes.ipynb"
+  },
+  {
+    "original_repository": "ISLR-Landmarks-using-BiLSTM-with-Attention-Mechanism",
+    "original_commit": "0adb04466a0969fd3bec32f23fc28427ecfd96bc",
+    "original_path": "src/training_300 Classes.ipynb",
+    "original_git_blob_sha": "f2b63b5d8441c846ba2a48ad883e5b7ad94c78a8",
+    "code_cells_sha256": "f067a22acde7451e32bd21aa315d5a3cc2934c972d9bcdb2d149c700a8d7c4fc",
+    "destination": "experiments/01_bilstm_attention/notebooks/03_train_300_classes.ipynb"
+  },
+  {
+    "original_repository": "MSE-GCN-Paper-Methodology",
+    "original_commit": "a0a433898ab126d70ebaf6d76e7f1040d7e8204f",
+    "original_path": "src/landmarks extraction.ipynb",
+    "original_git_blob_sha": "bcb26dc4e6f14938dc1ff40187bce5c31cc057d4",
+    "code_cells_sha256": "da08e737e6f94354a4b44d58ce6a4d5d164ab8fad5e3b8145f648635ae812bed",
+    "destination": "experiments/02_mse_gcn/notebooks/01_extract_landmarks.ipynb"
+  },
+  {
+    "original_repository": "MSE-GCN-Paper-Methodology",
+    "original_commit": "a0a433898ab126d70ebaf6d76e7f1040d7e8204f",
+    "original_path": "src/mse-gcn-67-3500k.ipynb",
+    "original_git_blob_sha": "861230a8404c5e315c30951a83c7a26623ec1e0e",
+    "code_cells_sha256": "f8304067255284ee35a489017ff174440f8a0ccbdc2d519ef4cd9604c7da3cd0",
+    "destination": "experiments/02_mse_gcn/notebooks/02_train_mse_gcn.ipynb"
+  },
+  {
+    "original_repository": "TT-STGCN-for-Sign-Language-Recognition",
+    "original_commit": "84fb316b31f7770cb5dfe539b83af3c2ce57ed9c",
+    "original_path": "src/landmarks extraction.ipynb",
+    "original_git_blob_sha": "bcb26dc4e6f14938dc1ff40187bce5c31cc057d4",
+    "code_cells_sha256": "da08e737e6f94354a4b44d58ce6a4d5d164ab8fad5e3b8145f648635ae812bed",
+    "destination": "experiments/03_tt_stgcn/notebooks/01_extract_landmarks.ipynb"
+  },
+  {
+    "original_repository": "TT-STGCN-for-Sign-Language-Recognition",
+    "original_commit": "84fb316b31f7770cb5dfe539b83af3c2ce57ed9c",
+    "original_path": "src/tt-stgcn-for-300 (1).ipynb",
+    "original_git_blob_sha": "63fba09a0e74414b51a8982f0b7c457f57db7921",
+    "code_cells_sha256": "b658ef54c289feeb77fa8f6ecc920869af1355c37a7740ff7be53156516b4bf0",
+    "destination": "experiments/03_tt_stgcn/notebooks/02_train_tt_stgcn.ipynb"
+  },
+  {
+    "original_repository": "Efficient-TT-STGCN-for-Sign-Language-Recognition",
+    "original_commit": "ced7644f57a7e334dbb730f0e84b10c647fed2ff",
+    "original_path": "notebooks/01_extract_landmarks.ipynb",
+    "original_git_blob_sha": "be9da3d40226f45e3b5778e3e50ef6d8afa3c3e0",
+    "code_cells_sha256": "da08e737e6f94354a4b44d58ce6a4d5d164ab8fad5e3b8145f648635ae812bed",
+    "destination": "experiments/04_efficient_tt_stgcn/notebooks/01_extract_landmarks.ipynb"
+  },
+  {
+    "original_repository": "Efficient-TT-STGCN-for-Sign-Language-Recognition",
+    "original_commit": "ced7644f57a7e334dbb730f0e84b10c647fed2ff",
+    "original_path": "notebooks/02_train_lightweight_ttstgcn.ipynb",
+    "original_git_blob_sha": "5e5303dfcf7f56eb748c9fb09da1b0de41899e32",
+    "code_cells_sha256": "71700f84f451beec1d7ac1ac7440cd899792c67fd967fd1fe64c2d5265b3df52",
+    "destination": "experiments/04_efficient_tt_stgcn/notebooks/02_train_efficient_tt_stgcn.ipynb"
+  }
+]

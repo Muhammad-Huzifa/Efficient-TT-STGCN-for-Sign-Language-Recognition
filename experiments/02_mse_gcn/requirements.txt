@@ -1,0 +1,16 @@
+numpy==1.26.4
+opencv-contrib-python==4.10.0.84
+mediapipe==0.10.14
+torch>=1.12
+torchvision>=0.13
+tqdm
+scipy
+matplotlib
+pandas
+jupyter
+notebook
+ipython
+
+jupyterlab>=4,<5
+
+torchsummary>=1.5,<2
